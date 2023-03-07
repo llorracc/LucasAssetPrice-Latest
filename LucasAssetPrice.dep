@@ -1,7 +1,6 @@
 \RequireVersions{
   *{application}{TeX}     {1990/03/25 v3.x}
   *{format} {LaTeX2e}     {2020-10-01 v2.e}
-  *{file}   {LucasAssetPrice.tex}{0000/00/00 v0.0}
   *{file}   {./.econtexRoot}{0000/00/00 v0.0}
   *{file}   {./Resources/.econtexPaths}{0000/00/00 v0.0}
   *{class}  {./Resources/texmf-local/tex/latex/handout}{2023/03/05 v0.0}
@@ -76,11 +75,11 @@
   *{package}{footmisc}    {2011/06/06 v5.5b}
   *{package}{manyfoot}    {2019/08/03 v1.11}
   *{package}{nccfoots}    {2005/02/03 v1.2}
-  *{package}{./Resources/texmf-local/tex/latex/handoutSetup}{0000/00/00 v0.0}
-  *{package}{handoutShortcuts}{0000/00/00 v0.0}
-  *{package}{econark}     {0000/00/00 v0.0}
+  *{package}{./Resources/texmf-local/tex/latex/econark}{0000/00/00 v0.0}
   *{package}{subfiles}    {2020/11/14 v2.2}
   *{package}{import}      {2020/04/01 v6.2}
+  *{package}{./Resources/texmf-local/tex/latex/handoutSetup}{0000/00/00 v0.0}
+  *{package}{handoutShortcuts}{0000/00/00 v0.0}
   *{package}{wasysym}     {2020/01/19 v2.4}
   *{package}{psibycus}    {2004/10/18 v4.5}
   *{file}   {ibycus4.map} {0000/00/00 v0.0}
