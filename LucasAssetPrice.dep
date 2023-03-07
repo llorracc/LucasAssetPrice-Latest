@@ -152,5 +152,6 @@
   *{file}   {./Equations/LAP_PtLogIID.tex}{0000/00/00 v0.0}
   *{file}   {./Equations/LAP_pofdCRRAWdvdndGro.tex}{0000/00/00 v0.0}
   *{file}   {./Equations/LAP_pofdCRRAIsConst.tex}{0000/00/00 v0.0}
+  *{file}   {./Resources/texmf-local/tex/latex/handoutBibMake.tex}{0000/00/00 v0.0}
   *{file}   {LucasAssetPrice.bbl}{0000/00/00 v0.0}
 }
