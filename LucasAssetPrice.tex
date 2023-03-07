@@ -492,6 +492,12 @@ which can surely somehow be used to produce a reasonable limit.  Actually, it se
 
 \end{comment}
 
-\input{\handoutBibMake}
+% \write18{if [ ! -f economics.bib    ]; then touch economics.bib    ; fi}
+\write18{if [ ! -f \jobname.bib     ]; then touch \jobname.bib     ; fi}
+\write18{if [ ! -f \jobname-Add.bib ]; then touch \jobname-Add.bib ; fi}
+
+\bibliographystyle{handout}
+\bibliography{economics,\jobname,\jobname-Add}
+
 
 \end{document}
