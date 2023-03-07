@@ -1,7 +1,6 @@
 \RequireVersions{
   *{application}{TeX}     {1990/03/25 v3.x}
   *{format} {LaTeX2e}     {2020-10-01 v2.e}
-  *{file}   {LucasAssetPrice.tex}{0000/00/00 v0.0}
   *{class}  {handout}     {2023/03/05 v0.0}
   *{package}{snapshot}    {2002/03/05 v1.14}
   *{package}{ifthen}      {2014/09/29 v1.1c}
