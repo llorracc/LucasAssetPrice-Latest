@@ -1,6 +1,7 @@
 \RequireVersions{
   *{application}{TeX}     {1990/03/25 v3.x}
   *{format} {LaTeX2e}     {2020-10-01 v2.e}
+  *{file}   {LucasAssetPrice.tex}{0000/00/00 v0.0}
   *{file}   {./.econtexRoot}{0000/00/00 v0.0}
   *{file}   {./Resources/.econtexPaths}{0000/00/00 v0.0}
   *{class}  {./Resources/texmf-local/tex/latex/handout}{2023/03/05 v0.0}
