@@ -1,7 +1,9 @@
 \RequireVersions{
   *{application}{TeX}     {1990/03/25 v3.x}
   *{format} {LaTeX2e}     {2020-10-01 v2.e}
-  *{class}  {handout}     {2023/03/05 v0.0}
+  *{file}   {./.econtexRoot}{0000/00/00 v0.0}
+  *{file}   {./Resources/.econtexPaths}{0000/00/00 v0.0}
+  *{class}  {./Resources/texmf-local/tex/latex/handout}{2023/03/05 v0.0}
   *{package}{snapshot}    {2002/03/05 v1.14}
   *{package}{ifthen}      {2014/09/29 v1.1c}
   *{package}{changepage}  {2009/10/20 v1.0c}
@@ -73,7 +75,7 @@
   *{package}{footmisc}    {2011/06/06 v5.5b}
   *{package}{manyfoot}    {2019/08/03 v1.11}
   *{package}{nccfoots}    {2005/02/03 v1.2}
-  *{package}{handoutSetup}{0000/00/00 v0.0}
+  *{package}{./Resources/texmf-local/tex/latex/handoutSetup}{0000/00/00 v0.0}
   *{package}{handoutShortcuts}{0000/00/00 v0.0}
   *{package}{econark}     {0000/00/00 v0.0}
   *{package}{subfiles}    {2020/11/14 v2.2}
@@ -108,6 +110,20 @@
   *{package}{atveryend-ltx}{2020/08/19 v1.0a}
   *{package}{rerunfilecheck}{2019/12/05 v1.9}
   *{package}{uniquecounter}{2019/12/15 v1.4}
+  *{package}{./Resources/LaTeXInputs/texname}{0000/00/00 v0.0}
+  *{package}{scrlayer-scrpage}{2021/03/17 v3.33}
+  *{package}{scrlayer}    {2021/03/17 v3.33}
+  *{package}{caption}     {2020/10/26 v3.5g}
+  *{package}{caption3}    {2020/10/21 v2.2e}
+  *{file}   {caption-koma.sto}{2020/09/21 v2.0b}
+  *{package}{inputenc}    {2020/08/01 v1.3d}
+  *{package}{fontenc}     {0000/00/00 v0.0}
+  *{package}{sectsty}     {2002/02/25 v2.0.2}
+  *{package}{placeins}    {2005/04/18 v2.2}
+  *{package}{nth}         {2002/02/27 v0.0}
+  *{package}{subcaption}  {2020/10/07 v1.3j}
+  *{package}{./Resources/texmf-local/tex/latex/pdfsuppressruntime}{0000/00/00 v0.0}
+  *{package}{ifxetex}     {2019/10/25 v0.7}
   *{file}   {t3cmr.fd}    {2001/12/31 v0.0}
   *{file}   {translations-basic-dictionary-english.trsl}{(english v0.0}
   *{file}   {supp-pdf.mkii}{0000/00/00 v0.0}
