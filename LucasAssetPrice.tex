@@ -4,6 +4,7 @@
 \usepackage{\handoutSetup}
 \usepackage{\LaTeXInputs/texname}
 \newcommand{\texname}{LucasAssetPrice}
+\usepackage{natbib}
 % \documentclass{handout}
 % \usepackage{handoutSetup}\usepackage{handoutShortcuts}
 % \begin{comment} % By CDC, first draft while walking dogs, on the occasion of reading Sargent's lecture notes praising the Lucas model as "beautiful"
@@ -496,7 +497,7 @@ which can surely somehow be used to produce a reasonable limit.  Actually, it se
 \write18{if [ ! -f \jobname.bib     ]; then touch \jobname.bib     ; fi}
 \write18{if [ ! -f \jobname-Add.bib ]; then touch \jobname-Add.bib ; fi}
 
-\bibliographystyle{\handout}
+\bibliographystyle[authoryear]{plainnat}
 \bibliography{economics,\jobname,\jobname-Add}
 
 
