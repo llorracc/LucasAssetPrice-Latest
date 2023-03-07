@@ -1,0 +1,37 @@
+\begin{equation*}\begin{gathered}\begin{aligned}
+
+The same derivations as before lead to the conclusion that
+
+This problem is not solved by relaxing the assumption that dividends are IID; when dividends are positively serially correlated it remains the case that when dividends are above their average level, an increase in risk aversion causes an increase in asset prices.
+
+This is likely one of the reasons that more exotic specifications of preferences have gained popularity in recent years; the two most prominent examples are Epstein-Zin utility, and various kinds of habit formation.
+
+\input handoutBibMake
+
+\end{document}
+
+
+\begin{comment}
+Defining $\exexp[\alpha \bullet] = \Ex[(e^{\bullet})^\alpha]$ as the expectation of the random variable $e^{\alpha \bullet}$, mathfact \ELogNorm~ says that
+\begin{equation}\begin{gathered}\begin{aligned}
+  \exexp[\alpha \err]  & =  e^{\alpha \mu + (1/2) \alpha^{2} \sigma^{2}}
+\end{aligned}\end{gathered}\end{equation}
+\end{comment}
+
+
+\begin{equation}\begin{gathered}\begin{aligned}
+  \dvdnd_{t}^{\CRRA}\edvdnd & =  \dvdnd_{t}^{\CRRA}\bar{\dvdnd}^{-\CRRA}\bar{\dvdnd}(e^{-(1/2)\CRRA \sigma^{2}})^{1-\CRRA} \edvdnd
+\\ & =  \left(\frac{\dvdnd_{t}}{\bar{\dvdnd}}\right)^{\CRRA}\bar{\dvdnd}(e^{-(1/2)\CRRA \sigma^{2}})^{1-\CRRA} \edvdnd
+\end{aligned}\end{gathered}\end{equation}
+
+This equation yields a few insights.
+
+First, since everything in the equation is a constant except $\dvdnd_{t}$ it can be rewritten as $\Price_{t} = \dvdnd_{t}^{\CRRA} \omega$ for some constant $\omega$.  Since $\CRRA>1$, this means that prices move more than one-for-one with dividends.
+
+
+Noting that everything in this expression is a constant except $\dvdnd_{t}$, the expression yields a few insights:
+\begin{enumerate}
+\item Prices are more volatile than dividends (because $\CRRA > 1$)
+\end{enumerate}
+
+
