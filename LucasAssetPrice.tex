@@ -405,7 +405,7 @@ which indicates that the arithmetic rate of return must be lower than the time p
       \end{aligned}\end{gathered}\end{equation}
 
   This makes the impatience condition
-  \begin{equation}\begin{gathered}\begin{aligned}
+  \begin{equation}\begin{gathered}\begin{aligned} \label{eq:approx-impatience-condition-lognormal-random-walk}
         \timeRate & \gtrsim  (\CRRA-1)\left(\CRRA\riskyvar/2 - \pGro\right).
       \end{aligned}\end{gathered}\end{equation}
 The effect of growth on the required rate of return therefore depends on the sign of $(\CRRA-1)$.
@@ -445,6 +445,73 @@ from which we can directly read off the following propositions:
 % \end{verbatimwrite}
 % \input{./Equations/LAP_PtLogRW.tex}
 
+\subsection{Alternative analysis with exact impatience condition}
+
+Consider a different analysis of Lucas asset prices when dividends follow a lognormal random walk.
+Recall that $\PGro=e^{\pGro}$ is the growth factor of the dividend.
+Let $\phi \sim e^\mathcal{N}(-\riskyvar/2,\riskyvar)$.
+So $\frac{\dvdnd_{t+1}}{\dvdnd_{t}} = \PGro \phi $.
+We can then rewrite \eqref{eq:pofdCRRAWdvdndGro} as:
+
+\begin{equation}
+  \left(\frac{\Price_{t}}{\dvdnd_{t}}\right) =  \DiscFac \dvdnd_{t}^{-(1-\CRRA)} \Ex_{t}\left[(\PGro \phi d_{t})^{1-\CRRA}\left(\frac{\Price_{t+1}}{\dvdnd_{t+1}}+1\right)\right] 
+ \end{equation}
+
+ Again letting $\mathbf{r} = \riskyELev^{-1} = \left(\frac{\Price_{t}}{\dvdnd_{t}}\right)$:
+
+\begin{equation}
+  \mathbf{r} =  \DiscFac \dvdnd_{t}^{-(1-\CRRA)} \Ex_{t}\left[(\PGro \phi d_{t})^{1-\CRRA}\left(\riskyELev^{-1}+1\right)\right] 
+ \end{equation}
+
+ Notice the $\dvdnd_{t}$ terms on the RHS cancel out, and the only stochastic element is $\phi_t$:
+
+ \begin{equation}
+  \mathbf{r} = \left(\mathbf{r}+1\right) \DiscFac \PGro^{1-\CRRA}\Ex_{t}\left[\phi^{1-\CRRA})\right] 
+ \end{equation}
+
+ Solving for $\mathbf{r}$, which must be positive:
+
+  \begin{equation}
+  0 < \mathbf{r} = \frac{\DiscFac \PGro^{1-\CRRA}\Ex_{t}\left[\phi^{1-\CRRA})\right] }{1 - \DiscFac \PGro^{1-\CRRA}\Ex_{t}\left[\phi^{1-\CRRA})\right]} = \frac{\mathbf{s}}{1 - \mathbf{s}}
+ \end{equation}
+
+Consider the value $\mathbf{s} = \DiscFac \PGro^{1-\CRRA}\Ex_{t}\left[\phi^{1-\CRRA})\right]$.
+You might call it the "subjective growth factor" of the dividend, since is a subjectively discounted
+and risk aversion adjusted growth rate of the dividend.
+It is always positive.
+So the above condition implies that $\mathbf{s} < 1$.
+This is a form of "impatience condition" -- an exact expression of the impatience condition
+approximated in \eqref{eq:approx-impatience-condition-lognormal-random-walk}. 
+
+Because of the math facts about lognormal distributions, $\Ex_{t}\left[\phi^{1-\CRRA})\right] = e^{(\CRRA - 1)\CRRA \sigma^2_d / 2}$,
+which can be used to derive \eqref{eq:PLognormGro} from the above.
+
+However, the form of the equation we have been working with helps us with the following problem:
+Suppose we are trying to calibrate the model to an empirical price process with growth factor $\Gamma_P$ and standard deviation $\sigma_P$.
+What is the value of $\mathbf{s}$, and is the impatience condition met?
+
+Because the price-dividend ratio $\mathbf{r}$ is constant, $\PGro = \Gamma_P$.
+
+The trickier part of the derivation is from the information $\sigma_P$.
+First, we must scale the standard deviation of price shock down by the growth factor, $\sigma_\phi = \frac{\sigma_P}{\sqrt{\PGro}}$,
+to get the standard deviation of the lognormal shock to dividends $\phi$.
+Recall that $\phi \sim e^{\mathcal{N}(-\riskyvar/2,\riskyvar)}$, so $\mu_d = -\sigma^2_d/2$. Then:
+
+\begin{equation}
+  \text{Var}[\phi_t] = \sigma^2_\phi = \exp(2 \mu_d + 2 \sigma^2_d) - \exp(2 \mu_d + \sigma^2_d) = \exp(\sigma^2_d) - 1
+\end{equation}
+
+Implying that $\log ( \sigma^2_\phi + 1) = \sigma^2_d$.
+
+Recall that $\phi^p_t \sim e^{\mathcal{N}(-p \sigma^2_d / 2, p^2 \sigma^2_d)}$. From this we get:
+
+$$\mathbb{E}_t \left[ \phi^{1-\CRRA}_t  \right] = e^{-(1 - \CRRA)\CRRA\sigma^2_d/2} = e^{-(1 - \CRRA)\CRRA\log ( \sigma^2_\phi + 1)/2} = (\sigma^2_\phi + 1)^{(\CRRA - 1)\CRRA /2}$$
+
+Which means the impatience condition "at the level of" the lognormal shock is:
+
+$$ \DiscFac \PGro^{1-\CRRA} (\sigma^2_\phi + 1)^{(\CRRA - 1)\CRRA /2} < 1$$
+
+This can be compared directly with empirical dividend and price processes.
 
 \begin{comment}
   % 20201104: The stuff below is wrong because the assumption was that dividends follow an AR(1) in LEVELS which is crazy
